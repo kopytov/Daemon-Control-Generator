@@ -4,7 +4,7 @@ dc-gen - generates init files for Daemon::Control
 
 # VERSION
 
-version 0.002
+version 0.003
 
 # SYNOPSIS
 
