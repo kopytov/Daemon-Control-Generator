@@ -36,5 +36,4 @@ Add it to system init (CentOS 6):
     cpanm Daemon::Control::Generator -M http://cpan.linuxprofy.net/public
 
 =head1 SEE ALSO
-
-L<Daemon::Control>
+Daemon::Control
