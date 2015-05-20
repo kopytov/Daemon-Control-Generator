@@ -1,5 +1,6 @@
 # ABSTRACT: generates init files for Daemon::Control
 package Daemon::Control::Generator;
+
 use Moose;
 use autodie;
 
