@@ -121,8 +121,10 @@ sub build_path {
     my $sysprefix = '/etc/opt';
     my $sysdir    = "$sysprefix/dc-gen";
     my $path      = "$sysdir/" . $self->progname;
-    mkdir $sysprefix if !-d $sysprefix;
-    mkdir $sysdir    if !-d $sysdir;
+    if ( $self->save ) {
+        mkdir $sysprefix if !-d $sysprefix;
+        mkdir $sysdir    if !-d $sysdir;
+    }
     return $path;
 }
 
