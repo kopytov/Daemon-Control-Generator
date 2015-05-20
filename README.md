@@ -4,7 +4,7 @@ dc-gen - generates init files for Daemon::Control
 
 # VERSION
 
-version 0.003
+version 0.004
 
 # SYNOPSIS
 
@@ -32,10 +32,6 @@ Add it to system init (CentOS 6):
 
     cpanm Daemon::Control::Generator -M http://cpan.linuxprofy.net/public
 
-# SEE ALSO
-
-[Daemon::Control](https://metacpan.org/pod/Daemon::Control)
-
 # AUTHOR
 
 Dmitry Kopytov <kopytov@webhackers.ru>
@@ -46,3 +42,15 @@ This software is copyright (c) 2015 by Dmitry Kopytov.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
+
+# SOURCE
+
+The development version is on github at [http://github.com/kopytov/Daemon-Control-Generator](http://github.com/kopytov/Daemon-Control-Generator)
+and may be cloned from [git://github.com/kopytov/Daemon-Control-Generator.git](git://github.com/kopytov/Daemon-Control-Generator.git)
+
+# SEE ALSO
+
+Please see those modules/websites for more information related to this module.
+
+- [Daemon::Control::Generator](https://metacpan.org/pod/Daemon::Control::Generator)
+- [Daemon::Control](https://metacpan.org/pod/Daemon::Control)
