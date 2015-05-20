@@ -4,7 +4,7 @@ dc-gen - generates init files for Daemon::Control
 
 # VERSION
 
-version 0.001
+version 0.002
 
 # SYNOPSIS
 
@@ -25,8 +25,8 @@ Generate and save script to /etc/opt/dc-gen:
 Add it to system init (CentOS 6):
 
     /etc/opt/dc-gen/postgres get_init_file >/etc/init.d/postgres
+    chmod +x /etc/init.d/postgres
     chkconfig --add postgres
-    chkconfig postgres on
 
 # INSTALL
 

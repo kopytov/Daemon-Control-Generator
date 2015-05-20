@@ -154,7 +154,7 @@ sub mq ($) {
 sub script {
     my $self       = shift;
     my $script_fmt = <<'END_SCRIPT';
-#!/usr/bin/env perl
+#!%s
 use strict;
 require Daemon::Control;
 my $dc = Daemon::Control->new(
@@ -177,7 +177,7 @@ my $dc = Daemon::Control->new(
 );
 exit $dc->run;
 END_SCRIPT
-    return sprintf $script_fmt, mq $self->progname, mq $self->lsb_start,
+    return sprintf $script_fmt, $^X, mq $self->progname, mq $self->lsb_start,
       mq $self->lsb_stop, mq $self->lsb_sdesc, mq $self->lsb_desc,
       mq $self->path, mq $self->program, mq $self->user, mq $self->group,
       mq $self->directory,   mq $self->pid_file,  mq $self->stderr_file,
