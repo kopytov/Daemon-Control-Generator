@@ -30,7 +30,7 @@ Add it to system init (CentOS 6):
 
 # INSTALL
 
-    cpanm Daemon::Control::Generator -M http://cpan.linuxprofy.net/public
+    cpanm Daemon::Control::Generator -M http://cpan.fozzy.com/public
 
 # AUTHOR
 
